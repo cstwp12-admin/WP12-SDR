@@ -35,7 +35,7 @@ It replaces forwarding loose photos to WhatsApp groups. Those photos are hard to
 | **Tag many photos at once** | Select several photos and apply the same activity, chainage, side or RFI no. in one step. |
 | **PDF report** | A4, 4 photos per page, with the JKR and contractor logos, report details, weather, an optional summary table, and a caption under each photo. Captions in English, Bahasa Malaysia, or both. |
 | **Captioned photos** | Each photo with the date, time, chainage, activity, BQ ref and RFI printed on it, renamed in order (e.g. `20261009_CST_03_CH71+770_Box-culvert-concreting.jpg`). The caption stays with the photo when it is forwarded. |
-| **RFI photo record** | One PDF per RFI no., set out to accompany the JKR Sabah *Request For Inspection* form (Arahan Jabatan Bil. 11/2026). It has the location, description, drawing reference, inspection result boxes, comments, sign-off blocks for SS/RE, SOR/PDR and Site Agent, and the photos. |
+| **RFI photo record** | One PDF per RFI no., set out to accompany the JKR Sabah *Request For Inspection* form (Arahan Jabatan Bil. 11/2026). It has the location, description, drawing reference, inspection result boxes, comments, sign-off blocks: Prepared by (WPC), Checked by (CST) and Acknowledged by (SOR), and the photos. |
 | **WhatsApp message** | A short list of activities and chainages to paste with the PDF. |
 | **Register log** | Every report saved or shared is logged on the device, with Reports, RFIs and Photos views, filters and CSV export (opens in Excel). Logs from other users can be imported. |
 | **Works offline** | Once opened, it works without signal on site. Drafts are kept if the phone closes the browser. |
@@ -101,6 +101,10 @@ The app is built so the project data is separate from the app itself. For anothe
 - road centreline with chainages, from the alignment KMZ or setting-out data;
 - client and contractor logos.
 
+## Version history and roadmap
+
+The current version is shown in the app under **Setup** (bottom panel). Changes are listed in [CHANGELOG.md](CHANGELOG.md). The pilot and rollout plan and the features under consideration are in [ROADMAP.md](ROADMAP.md).
+
 ## Files
 
 | File | What it is |
@@ -108,6 +112,8 @@ The app is built so the project data is separate from the app itself. For anothe
 | `index.html` | The app |
 | `setup.json` | Project setup: logos, zones, activities, structures, centreline |
 | `manifest.webmanifest`, `sw.js`, `icon-192.png`, `icon-512.png` | Let the app install on a phone and work offline |
+| `CHANGELOG.md` | Revision history |
+| `ROADMAP.md` | Pilot and rollout plan, future features |
 | `screenshot-*.png` | Pictures used on this page |
 
 ## Ringkasan (BM)
