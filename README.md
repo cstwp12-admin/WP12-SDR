@@ -29,7 +29,9 @@ It replaces forwarding loose photos to WhatsApp groups. Those photos are hard to
 
 | | |
 |---|---|
-| **Activity list from the contract BQ** | 120 activities grouped by bill (earthworks, ground treatment, drainage, pavement, bridges, road furniture, ESCP, traffic, safety, testing, weather). Each shows its BQ item no., e.g. *Berm drain – concreting · BQ 9.2.3*. Bridge items show the BQ ref for the selected bridge. Search works in English or BM. |
+| **Activity list from the contract BQ** | 116 activities grouped by bill (earthworks, ground treatment, drainage, pavement, bridges, road furniture, ESCP, traffic, safety, QA testing & inspection, weather). Each shows its BQ item no., e.g. *Berm drain – concreting · BQ 9.2.3*. Bridge items show the BQ ref for the selected bridge. Search works in English or BM. |
+| **QC tests required by the contract** | 48 quality control tests that are not BQ items: joint sampling, laboratory tests, FDT, coring, spray rate, gradation, cube tests (G20–G50, grout), rebound hammer, RC pipe, geotextile and PVD tests. They are marked **QC** in the list and in the report, e.g. *Cube test – G40 · QC*. |
+| **More than one activity per photo** | A photo can be tagged with several activities, e.g. *Box culvert – concreting* + *Cube test – G30*. Tap each one in the list, then **Done**. |
 | **Chainage from GPS** | Photos with a GPS position get their chainage and side (LHS/RHS) from the WP12 centreline, e.g. *CH 70+000, 20 m RHS*. Chainage can always be typed or adjusted by hand. |
 | **Structure list** | Bridges B1–B4, culverts C1–C32, junction culverts JC1–JC13 and the reinforced soil walls. Picking one fills in its drawing chainage, which you then adjust to the actual site position. |
 | **Tag many photos at once** | Select several photos and apply the same activity, chainage, side or RFI no. in one step. |
@@ -55,7 +57,7 @@ It replaces forwarding loose photos to WhatsApp groups. Those photos are hard to
 ## Daily use
 
 1. **Take photo** at site, or **Add photos** from the gallery afterwards.
-2. For each photo, or for several selected together, choose the **activity** and check the **chainage** and **side**. Add the structure, element (e.g. A1, P2, pile 5), RFI no. and remarks where needed.
+2. For each photo, or for several selected together, choose the **activity** (one or more) and check the **chainage** and **side**. Add the structure, element (e.g. A1, P2, pile 5), RFI no. and remarks where needed.
 3. Tap **Generate report**, then:
    - **Share PDF**: pick WhatsApp and the group;
    - **Share photos**: the captioned photos;
@@ -71,7 +73,7 @@ RFI numbers use the fixed prefix `JKR-RFI-WP12-`, so only the trade code and num
 - **There is no server and no login.** Photos, reports and the register stay on the phone or laptop that made them. Nothing is uploaded to this site.
 - Each party keeps its own records: the PDF and ZIP files it saves, and the **Register** in the app. Export the register to CSV regularly and keep it with your project files. Clearing the browser's data removes it from the device.
 - To combine records, import other users' `photo_log.csv` (inside their ZIP) under **Register → Import log**.
-- A team that wants one shared register can connect the app to its own Google Sheet (Setup → *Team register*). The script and setup guide are provided separately to the team that needs them. The sheet belongs to that team.
+- A team that wants one shared register can connect the app to its own Google Sheet (Setup → *Team register*). The guide is in [TEAM_REGISTER.md](TEAM_REGISTER.md) and the script is [Code.gs](Code.gs). It is optional, and the sheet belongs to that team.
 - This repository is public. It holds only the app, the logos, the activity list (BQ item numbers, no rates), structure chainages and the road centreline.
 
 ## Accuracy notes
@@ -114,6 +116,7 @@ The current version is shown in the app under **Setup** (bottom panel). Changes 
 | `manifest.webmanifest`, `sw.js`, `icon-192.png`, `icon-512.png` | Let the app install on a phone and work offline |
 | `CHANGELOG.md` | Revision history |
 | `ROADMAP.md` | Pilot and rollout plan, future features |
+| `TEAM_REGISTER.md`, `Code.gs` | Optional: guide and script for a team register in Google Sheets |
 | `screenshot-*.png` | Pictures used on this page |
 
 ## Ringkasan (BM)
